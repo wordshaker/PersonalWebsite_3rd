@@ -1,0 +1,35 @@
+h1, h2, h3, h4, h5, h6{
+    color: #9fa8a3;
+    text-shadow: 2px 2px #fff;
+}
+
+.btn-floating{
+    background-color:#9fa8a3;
+    margin-right: 5px;
+}
+
+.btn-floating:hover{
+    background-color:#e3e0cf;
+}
+
+.homepage{
+    height: 100%;
+    padding-top: 40px;
+    background-color: #c5d5cb;    
+   }
+
+.intro{
+    font-family: 'Amatic SC', cursive;
+    background-color: #fff;   
+    margin-top: 20%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.buttons{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
