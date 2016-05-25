@@ -9,7 +9,7 @@
     </head>
 
     <body>      
-       <div class="homepage">
+       <section class="homepage">
          <div class="container">
             <div class="row">
                 <div class="col-lg-4 intro center">
@@ -21,15 +21,15 @@
                          <a class="btn-floating btn-large waves-effect waves-light" href="https://github.com/wordshaker"><i class="mdi mdi-github-circle"></i></a>
                          <a class="btn-floating btn-large waves-effect waves-light" href="https://uk.linkedin.com/in/jessica-pattison-white-67917883"><i class="mdi mdi-linkedin"></i></a>
                          <a class="btn-floating btn-large waves-effect waves-light" href="mailto:code.jessw@gmail.com"><i class="mdi mdi-email-open"></i></a>
-                         <a class="btn-floating btn-large waves-effect waves-light "><i class="mdi mdi-message-outline"></i></a>
+                         <a class="btn-floating btn-large waves-effect waves-light" href="#blogSection"><i class="mdi mdi-message-outline"></i></a>
                     </div>
 
                 </div>
             </div>
         </div>
-      </div> 
+      </section> 
       
-      <div class="blog">
+      <section id="blogSection" class="blog">
          <div class="container">
             <div class="row">
                 <div class="col-lg-4 intro center">
@@ -40,19 +40,38 @@
                             <li class="active" data-filter="all">All</li>
                             <li data-filter="1">Hackathons</li>
                             <li data-filter="2">Conferences</li>
-                            <li data-filter="3">Rasberry Pi</li>
-                            <li data-filter="4">Node</li>
-                            <li data-filter="4">C#</li>
+                            <li data-filter="3">Women In Tech</li>
+                            <li data-filter="4">Rasberry Pi</li>
+                        </ul>
+                        <ul class="simplefilter">
+                            <li data-filter="5">Node</li>
+                            <li data-filter="6">C#</li>
+                            <li data-filter="7">Java</li>
                         </ul>
                     </div>
                     
                     <div class="row">
                         <div class="filtr-container">
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Busy streets">
-                              <a href="https://www.jesswhite.co.uk/2016/03/30/Women-Techmakers-2016/" class="item-desc">Women Tech Makers 2016</a>
+                            <div class="col-xs-3 col-sm-4 col-md-3 filtr-item" data-category="4, 5" data-sort="WTM">
+                              <a href="http://www.jesswhite.co.uk/SonosAlerts.html" class="item-desc">Sonos Alerts</a>
                             </div>
-                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 4" data-sort="Luminous night">
-                              <a href="https://www.jesswhite.co.uk/2016/03/30/Women-Techmakers-2016/" class="item-desc">Hack24 2016</a>
+                            <div class="col-xs-3 col-sm-4 col-md-3 filtr-item" data-category="2, 3" data-sort="WTM">
+                              <a href="http://www.jesswhite.co.uk/WTM16.html" class="item-desc">Women Tech Makers 16</a>
+                            </div>
+                            <div class="col-xs-3 col-sm-4 col-md-3 filtr-item" data-category="1, 6" data-sort="HACK">
+                              <a href="http://www.jesswhite.co.uk/HackTwentyFour16.html" class="item-desc">Hack24 2016</a>
+                            </div>
+                            <div class="col-xs-3 col-sm-4 col-md-3 filtr-item" data-category="1, 6" data-sort="Hack">
+                              <a href="http://www.jesswhite.co.uk/HackMcr.html" class="item-desc">Hack Manchester</a>
+                            </div>
+                            <div class="col-xs-3 col-sm-4 col-md-3 filtr-item" data-category="1" data-sort="Hack">
+                              <a href="http://www.jesswhite.co.uk/HackTwentyFour15.html" class="item-desc">Hack24 2015</a>
+                            </div>
+                            <div class="col-xs-3 col-sm-4 col-md-3 filtr-item" data-category="2, 3" data-sort="WTM">
+                              <a href="http://www.jesswhite.co.uk/WTM15.html" class="item-desc">Women Tech Makers 15</a>
+                            </div>
+                            <div class="col-xs-3 col-sm-4 col-md-3 filtr-item" data-category="1, 7" data-sort="Hack">
+                              <a href="http://www.jesswhite.co.uk/BrumHack.html" class="item-desc">Brum Hack 2014</a>
                             </div>
                         </div>
                     </div>
@@ -60,7 +79,7 @@
                 </div>
             </div>
         </div>
-      </div>  
+      </section>  
         
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
