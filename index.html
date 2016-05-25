@@ -27,9 +27,50 @@
                 </div>
             </div>
         </div>
+      </div> 
+      
+      <div class="blog">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-4 intro center">
+                <h1 > Blog </h1> 
+                   <div class="row">
+                        <ul class="simplefilter">
+                            <h3>Blog Topics</h3>
+                            <li class="active" data-filter="all">All</li>
+                            <li data-filter="1">Hackathons</li>
+                            <li data-filter="2">Conferences</li>
+                            <li data-filter="3">Rasberry Pi</li>
+                            <li data-filter="4">Node</li>
+                            <li data-filter="4">C#</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="filtr-container">
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" data-sort="Busy streets">
+                              <a href="https://www.jesswhite.co.uk/2016/03/30/Women-Techmakers-2016/" class="item-desc">Women Tech Makers 2016</a>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1, 4" data-sort="Luminous night">
+                              <a href="https://www.jesswhite.co.uk/2016/03/30/Women-Techmakers-2016/" class="item-desc">Hack24 2016</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
       </div>  
         
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="filterizr/jquery.filterizr.js"></script>
+      <script src="js/controls.js"></script>
+      <script type="text/javascript">
+        $(function() {
+            $('.filtr-container').filterizr();
+        });
+    </script>
     </body>
   </html>

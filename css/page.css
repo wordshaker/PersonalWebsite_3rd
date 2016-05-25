@@ -33,3 +33,44 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 30px;
     margin-bottom: 30px;
 }
+/**/
+body {
+    margin-top: 1rem;
+}
+.filtr-item {
+    padding: 1rem;
+}
+.item-desc {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1;
+    left: 2rem;
+    right: 2rem;
+    width:250px;
+    font-size: 20px;
+}
+
+/* Filter controls */
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-size: 20px;
+}
+.simplefilter li {
+    background-color: #9fa8a3;
+}
+.simplefilter li.active {
+    background-color: #e3e0cf;
+}
+
+/* Shuffle and sort controls */
+select {
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
