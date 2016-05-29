@@ -14,9 +14,9 @@
     <body> 
       <nav class="blogcolours">
           <div class="nav-wrapper">
-          <a href="http://www.jesswhite.co.uk/" class="brand-logo">Jessica White</a>
+          <a href="http://www.jesswhite.co.uk/#blogSection" class="brand-logo">Jessica White</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a class="link" href="http://www.jesswhite.co.uk/">Home</a></li>
+              <li><a class="link" href="http://www.jesswhite.co.uk/#blogSection">Home</a></li>
           </ul>
           </div>
       </nav>
@@ -35,34 +35,36 @@
                 <div class="blogheading">
                     <h3> Iteration One</h3>
                 </div> 
-                    <p class="blogpara col-left">
-                    The aim of the first iteration was to enable a vocal alert to be sounded on a Sonos speaker based
-                    on events set up on <a href="https://www.datadoghq.com/">DataDog</a>. This was done forking the code from
-                    <a href="https://github.com/jishi/node-sonos-http-api">sonos-http-api</a> to make a sonos server/api, 
-                    <a href="http://www.voicerss.org/">Voice RSS</a> for the vocal mp3, writing our own code to write an
-                    API and the logic about what was to be said across the Sonos. 
-                    
-                    We test drove our code, pairing using a red, green, refactor pattern. Once it was shown to be working,
-                    <a href="https://ngrok.com/">ngrok</a> was used to produce a secure url to configure a DataDog webhook to, using the 
-                    webhook integration.
-                    
-                    The code for this can be found <a href="https://github.com/sonos-alerts">here</a> with all current instructions
-                    on how to work it. The DataDog details are currently not included.
-                    </p>
+                <div class="row">
+                        <p class="blogpara col-left">
+                        The aim of the first iteration was to enable a vocal alert to be sounded on a Sonos speaker based
+                        on events set up on <a href="https://www.datadoghq.com/">DataDog</a>. This was done forking the code from
+                        <a href="https://github.com/jishi/node-sonos-http-api">sonos-http-api</a> to make a sonos server/api, 
+                        <a href="http://www.voicerss.org/">Voice RSS</a> for the vocal mp3, writing our own code to write an
+                        API and the logic about what was to be said across the Sonos. 
+                        
+                        We test drove our code, pairing using a red, green, refactor pattern. Once it was shown to be working,
+                        <a href="https://ngrok.com/">ngrok</a> was used to produce a secure url to configure a DataDog webhook to, using the 
+                        webhook integration.
+                        
+                        The code for this can be found <a href="https://github.com/sonos-alerts">here</a> with all current instructions
+                        on how to work it. The DataDog details are currently not included.
+                        </p>
                     <div class="center img-margin col-right">
                         <img src="./images/piOne.jpg" class="center img-responsive"></>
                     </div>
+                </div>
+           </div>
+           <div class="container">
                 <div class="blogheading">
                     <h3> Future Plans:</h3>
                 </div>
-                    <p class="col-left">
-                        <ul class="blogpara">
-                            <li>Iteration 2: Make our own version of ngrok that we can make permenant.</li>
-                            <li>Iteration 3: Voice commands</li>
-                            <li>Iteration 4: Button to make alerts happen remotely</li>
-                            <li>Iteration 5: Blinking watch</li>
-                        </ul>
-                    </p>
+                    <ul class="blogpara">
+                        <li>Iteration 2: Make our own version of ngrok that we can make permenant.</li>
+                        <li>Iteration 3: Voice commands</li>
+                        <li>Iteration 4: Button to make alerts happen remotely</li>
+                        <li>Iteration 5: Blinking watch</li>
+                    </ul>
            </div>
       </div>  
         
