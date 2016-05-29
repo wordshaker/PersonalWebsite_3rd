@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5, h6{
     text-shadow: 2px 2px #fff;
 }
 
+p{
+    font-size: 20px;
+}
+
 .btn-floating{
     background-color:#9fa8a3;
     margin-right: 5px;
@@ -48,6 +52,11 @@ h1, h2, h3, h4, h5, h6{
     margin-left: 15%;
     margin-right: 15%;
 }
+.blogpara{
+    font-family: 'Josefin Sans', cursive;
+    background-color: #fff;   
+    font-size: 18px;
+}
 .buttons{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -69,7 +78,13 @@ h1, h2, h3, h4, h5, h6{
     font-size: 20px;
     margin: 0px 15px 15px 15px;
 }
-
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 2px 2px #9fa8a3;
+    text-align: center;
+    margin-bottom: 10px;
+}
 /* Filter controls */
 .simplefilter li, .multifilter li, .sortandshuffle li {
     color: white;
