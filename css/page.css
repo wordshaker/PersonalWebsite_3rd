@@ -4,7 +4,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 p{
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Josefin Sans', cursive;
 }
 
 .btn-floating{
@@ -63,11 +64,19 @@ p{
 }
 .col-left{
     float: left;
-    width: 65%;
+    width: 55%;
 }
 .col-right{
     float: right;
-    width: 30%;
+    width: 55%;
+}
+.col-left-sml{
+    float: left;
+    width: 35%;
+}
+.col-right-sml{
+    float: right;
+    width: 35%;
 }
 .buttons{
     margin-top: 30px;
@@ -129,6 +138,12 @@ select {
         width: 100%;
     }
     .col-right{
+        width: 100%;
+    }
+    .col-left-sml{
+        width: 100%;
+    }
+    .col-right-sml{
         width: 100%;
     }
 }
