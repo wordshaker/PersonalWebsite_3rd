@@ -4,6 +4,8 @@
       <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
       <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+      <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/page.css"  media="screen,projection"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -21,13 +23,47 @@
              
       <div class="blog">
          <div class="container">
-            <div class="row">
                 <div class="col-lg-4 blogintro center">
-                <h1 > Sonos Alerts 2016 </h1>
-                    
+                    <h1 > Sonos Alerts 2016 </h1>
                 </div>
-            </div>
-        </div>
+                    <p class="blogpara">
+                        This was a joint project between myself and my partner Moreton as our first attempt
+                        at using a RaspberryPi and test driving a Node.JS project. We both wanted to learn node
+                        and when I came up with the project idea as a piece of fun to help out the place I work at; 
+                        it seemed like the perfect opportunity to learn Node.
+                    </p>
+                <div class="blogheading">
+                    <h3> Iteration One</h3>
+                </div> 
+                    <p class="blogpara col-left">
+                    The aim of the first iteration was to enable a vocal alert to be sounded on a Sonos speaker based
+                    on events set up on <a href="https://www.datadoghq.com/">DataDog</a>. This was done forking the code from
+                    <a href="https://github.com/jishi/node-sonos-http-api">sonos-http-api</a> to make a sonos server/api, 
+                    <a href="http://www.voicerss.org/">Voice RSS</a> for the vocal mp3, writing our own code to write an
+                    API and the logic about what was to be said across the Sonos. 
+                    
+                    We test drove our code, pairing using a red, green, refactor pattern. Once it was shown to be working,
+                    <a href="https://ngrok.com/">ngrok</a> was used to produce a secure url to configure a DataDog webhook to, using the 
+                    webhook integration.
+                    
+                    The code for this can be found <a href="https://github.com/sonos-alerts">here</a> with all current instructions
+                    on how to work it. The DataDog details are currently not included.
+                    </p>
+                    <div class="center img-margin col-right">
+                        <img src="./images/piOne.jpg" class="center img-responsive"></>
+                    </div>
+                <div class="blogheading">
+                    <h3> Future Plans:</h3>
+                </div>
+                    <p class="col-left">
+                        <ul class="blogpara">
+                            <li>Iteration 2: Make our own version of ngrok that we can make permenant.</li>
+                            <li>Iteration 3: Voice commands</li>
+                            <li>Iteration 4: Button to make alerts happen remotely</li>
+                            <li>Iteration 5: Blinking watch</li>
+                        </ul>
+                    </p>
+           </div>
       </div>  
         
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

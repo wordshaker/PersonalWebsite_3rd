@@ -52,14 +52,29 @@ p{
     margin-left: 15%;
     margin-right: 15%;
 }
+.blogheading{
+    font-family: 'Amatic SC', cursive;
+    background-color: #fff; 
+}
 .blogpara{
     font-family: 'Josefin Sans', cursive;
     background-color: #fff;   
     font-size: 18px;
 }
+.col-left{
+    float: left;
+    width: 65%;
+}
+.col-right{
+    float: right;
+    width: 30%;
+}
 .buttons{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.img-margin{
+    margin-top:35px;
 }
 /**/
 .filtr-item {
@@ -107,4 +122,13 @@ p{
 select {
     padding: 1rem 1rem;
     text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+    .col-left{
+        width: 100%;
+    }
+    .col-right{
+        width: 100%;
+    }
 }
