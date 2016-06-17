@@ -65,9 +65,18 @@
                     <div class="blogpara">
                         All of the talks are available on Youtube. Below is a list of a few of my favourites:
                         <p><b><a href="https://www.youtube.com/watch?v=9VC6YeQeZVk">Richard Rodger - Solving service discovery: Node.js microservices without a registry:</a></b>
-                            
+                            This talk went through the lessons learnt by Nearform in there 5 years of working with microservices. Richard first stated that automated deployment is essential 
+                            to be able to work efficiently with microservices. He also went on to praise [Netflix Eureka](https://github.com/Netflix/eureka) as an example of intelligent load balancing.
+                            He argued that 'service discovery' is now an antipattern and that we should make message first class citizens, using them to define patterns. In this it should not matter 
+                            where a message ends up or how it got there, only that a service is interested in something it contains.
                             </p><p>
-                      
+                            He went on to discuss that each service should have a local view of itself, but there should be a self-updating global view using
+                            [SWIM](https://www.cs.cornell.edu/~asdas/research/dsn02-swim.pdf) (Scalable Weakly-consistent Infection-style Process Group Membership Protocol). In this each service pings random 
+                            services. This knowledge is then shared on to the next set of pings, and so the process continues. Using this process we can see which services are up and which are not. At convergence you get 
+                            complete knowledge of the entire system and all this happens in milliseconds. This is useful for scalability and composability.    
+                            </p><p>
+                            An example of the implemenation of a microservices architecture using Node.JS written by Richard can be found [here](https://github.com/senecajs/ramanujan). This is a Twitter like app that
+                            uses the Seneca microservices framework that is also a good example of the SWIM protocol for peer-to-peer discovery.
                         </p>
                         
                         <p><b><a href="https://www.youtube.com/watch?v=WKTtnVb83mQ">Fred George - How to enable organizations to go faster:</a></b>
