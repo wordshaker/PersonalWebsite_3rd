@@ -94,18 +94,32 @@
                             introduce bad attitudes. 
                         </p>
                         
-                        <p><b><a href="https://twitter.com/jasonmelo">Jason Melo - Microliths: how to avoid traps in your stack and your culture</a></b>
+                        <p><b><a href="https://www.youtube.com/watch?v=UAJuYs5PNqk">Jason Melo - Microliths: how to avoid traps in your stack and your culture</a></b>
                         I love the term 'Microlith' which Jason used to refer to tightly coupled microservices. This is definitely a danger when moving from a monolith to a microservices 
                         architecture. In this talk Jason Melo discussed the journey from monolith to microservice in the following phases:
                         </p>
-                        <ol>Phase 1 - Cultural mindshift</ol>
-                        <p>
-                              
+                        <ol>Phase 1a - Cultural mindshift</ol>
+                        <p>   
+                            EMBRACE THE CHAOS! Everyone is involved in DevOps and it is not an individuals role! There will be well defined service ownership and LOADS of databases! Multiple run times!
+                            These are factors which some may have difficulty with in the begining.      
                         </p> 
-                        <ol>Phase 1 - Cultural mindshift</ol>
+                        <ol>Phase 1b - Strangling the monolith</ol>
                         <p>
-                              
+                            Teams contorl their services with domain boundaries, guard rails and build pipelines. You can expect very high amounts of network chattiness dependent on synchronous REST. Elegant service
+                            discovery can make this process more smooth.
                         </p> 
+                        <ol>Phase 2 - Event Messaging over REST + Logging and Analytics</ol>
+                        <p>
+                            Decoupling the microlith us difficult and investment in logging is VERY important. A transaction tracer can also be useful for seeing flow and can be used in conjunction with logs.
+                            ELK, Kafka, Spark and S3 are all examples of aggregated loggin solutions. IF you are using Blue-Green deployent, you can do realtime log analytics on deployment using the same analytics platform.
+                        </p> 
+                        <ol>Phase 3 - Scheduling and Orchestration</ol>
+                        <p>
+                            Jenkins, Docker UCP/Swarm on AWS, Cloud Formation and Ansible - you need to work hard at getting persistence and scaling right! These can run distributed data streaming, messaging and analytics 
+                            pipelines seemlessly.
+                        </p> 
+                            It was interesting seeing how another company has approached the monolith to microservices journey and the tools they found useful. There seems to be many variations of this 
+                            journey but a lot of the same difficulties are faced in each.
                    </div>
                 </div>
                 
