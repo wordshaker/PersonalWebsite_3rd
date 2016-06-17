@@ -33,8 +33,11 @@
                 </div> 
                 <div class="row"> 
                     <div class="blogpara">
-                        [Docker](https://www.docker.com/), [Cloud /AWS](https://aws.amazon.com/), [Canary Testing / Release](http://martinfowler.com/bliki/CanaryRelease.html), 
-                        [Blue-Green Deployment](http://martinfowler.com/bliki/BlueGreenDeployment.html), [SWIM](https://www.cs.cornell.edu/~asdas/research/dsn02-swim.pdf)
+                        <a href="https://www.docker.com/">Docker</a>, 
+                        <a href="https://aws.amazon.com/">Cloud /AWS</a>,
+                        <a href="http://martinfowler.com/bliki/CanaryRelease.html">Canary Testing / Release</a>,
+                        <a href="http://martinfowler.com/bliki/BlueGreenDeployment.html">Blue-Green Deployment</a>, 
+                        <a href="https://www.cs.cornell.edu/~asdas/research/dsn02-swim.pdf">SWIM</a>
                    </div>
                 </div>
                 
@@ -50,7 +53,7 @@
                         <li><a href="https://twitter.com/jasonmelo">Jason Melo</a> - Microliths: how to avoid traps in your stack and your culture</li>
                         <li>Keith Lynch - Containers as an enabler for microservices and what it means for our industry</li>
                         <li><a href="https://twitter.com/clifcunn">Clifton Cunningham</a> - Micro-transformation</li>
-                        <li><a href="https://twitter.com/anne_e_currie">Anne Currie</a> - Microservices and Containers. How much faster than a VM</li>
+                        <li><a href="https://twitter.com/anne_e_currie">Anne Currie</a> - Microservices and Containers. How much faster than a VM/li>
                         <li><a href="https://twitter.com/valgog">Valentine Gogichashvili</a> &  Fabian Wollert - Data integration in the world of microservices</li>
                 </p>
                 </div>
@@ -60,7 +63,7 @@
                 </div> 
                 <div class="row"> 
                     <div class="blogpara">
-                        All of the talks are available on Youtube. Below is a list of a few of my favourites:
+                        All of the talks are available on <a href="https://www.youtube.com/playlist?list=PL0CdgOSSGlBZkM4ZSGO0fjkNTXEIteQy9">Youtube</a>. Below is a list of a few of my favourites:
                         <p><b><a href="https://www.youtube.com/watch?v=9VC6YeQeZVk">Richard Rodger - Solving service discovery: Node.js microservices without a registry:</a></b>
                             This talk went through the lessons learnt by Nearform in there 5 years of working with microservices. Richard first stated that automated deployment is essential 
                             to be able to work efficiently with microservices. He also went on to praise [Netflix Eureka](https://github.com/Netflix/eureka) as an example of intelligent load balancing.
@@ -108,9 +111,18 @@
                         </ol>
                         <ol><b>Phase 2 - Event Messaging over REST + Logging and Analytics:</b>
                             Decoupling the microlith us difficult and investment in logging is VERY important. A transaction tracer can also be useful for seeing flow and can be used in conjunction with logs.
-                            ELK, Kafka, Spark and S3 are all examples of aggregated loggin solutions. IF you are using Blue-Green deployent, you can do realtime log analytics on deployment using the same analytics platform.
+                            <a href="https://www.elastic.co/products">ELK (Elasticsearch, Logstash and Kibana)</a>, 
+                            <a href="http://kafka.apache.org/">Kafka</a>, 
+                            <a href="http://spark.apache.org/">Spark</a> and 
+                            <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html">S3</a> are all examples of aggregated loggin solutions. IF you are using Blue-Green deployent, you can do realtime log analytics on deployment using the same analytics platform.
                         </ol> 
-                        <ol><b>Phase 3 - Scheduling and Orchestration:</b> Jenkins, Docker UCP/Swarm on AWS, Cloud Formation and Ansible - you need to work hard at getting persistence and scaling right! These can run distributed data streaming, messaging and analytics 
+                        <ol><b>Phase 3 - Scheduling and Orchestration:</b> 
+                        <a href="https://jenkins.io/">Jenkins</a>, 
+                        <a href="https://www.docker.com/products/docker-universal-control-plane">Docker UCP </a> /  
+                        <a href="https://docs.docker.com/swarm/">Swarm</a> on AWS, 
+                        <a href="https://aws.amazon.com/cloudformation/">Cloud Formation</a> and 
+                        <a href="https://www.ansible.com/">Ansible </a>
+                         - you need to work hard at getting persistence and scaling right! These can run distributed data streaming, messaging and analytics 
                             pipelines seemlessly.
                         </ol> 
                             It was interesting seeing how another company has approached the monolith to microservices journey and the tools they found useful. There seems to be many variations of this 
@@ -123,10 +135,17 @@
                 </div> 
                 <div class="row"> 
                         <p class="blogpara">
-                           ...
-                           </p><p class="col-left">
-                           ...
-                        </p>
+                            Overall, for a free event, the quality of the speakers was supprisingly high. The venue was fantastic, the staff friendly and the general vibe was very open. As a conference, I would
+                            recommend it for both those wanting to explore moving into a microservices architecture and those that are established. It is good to learn from other companies wins and mistakes, but also
+                            there are a lot of practices and tools that may be useful.
+                            </p><p>
+                            Microservices Day did feel a bit like a practice for NodeConf, but it was free so I cannot complain about that. The talks all followed similar themes and towards the end of the day it started
+                            to feel like you had heard the same thing three times over - but I guess that it what comes from having a small area to talk about. 
+                            </p><p>
+                            It was interesting to hear about how companies had dealt with the transition to a microservices architecture and it was the first time I had come across SWIM protocol which I found 
+                            a particularly interesting concept. The use of Docker in production, and the way in which companies were testing new functionality was slightly different from what I have experienced. 
+                            There were a few things throughout the day that I think are worthy of further investigation, with the aim of eventually trying out some of them in my own work.                        
+                            </p>
                 </div>
             </div>
         </div>
